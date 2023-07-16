@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Country Glossary App</title>
+</head>
+<body>
+    <div class="countryImage">
+        <img id="logo" src="./logos-03.png" alt="">
+    </div>
+    <div class="container">
+        <h1>Country Glossary App</h1><br>
+        <div class="filter-section">
+            <div class="select">
+                <label for="continent">Select Continent:</label>
+                <select id="continent">
+                    <option value="africa">Africa</option>
+                    <option value="asia">Asia</option>
+                    <option value="europe">Europe</option>
+                </select>
+            </div>
+           
+            <input type="text" id="search" placeholder="Search country">
+        </div>
+        <div id="country-list" class="country"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
