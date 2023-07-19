@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181D25;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #475967;
+}
+
+.countryImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #181D25;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+
+#search {
+    width: 14.5rem;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: #181D25;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+#continent {
+    width: 6rem;
+    height: 2rem;
+    background-color: #181D25;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+label {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+img {
+    height: 10vh;
+    width: 23rem;
+}
+
+.countryDiv {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    background-color: #181D25;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.countryDiv:hover {
+    transform: scale(1.2);
+}
+
+
+.filter-section {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#country-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+}
+
+.countryDiv img {
+    max-width: 100px;
+}
+
+.countryDiv h3 {
+    margin-top: 10px;
+}
+
+.countryDiv p {
+    margin-top: 5px;
+}
+
+
+.detail-view {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #181D25;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 400px;
+    z-index: 1;
+    color: white;
+}
+
+.detail-flag {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.close-button:hover {
+    color: red;
+}
+
+/* Responsive adjustments */
+
+@media screen and (max-width: 768px) {
+    img {
+        width: 100%;
+    }
+
+    #country-list {
+        grid-template-columns: 1fr;
+    }
+
+    .countryDiv {
+        margin-bottom: 20px;
+    }
+
+    .filter-section {
+       flex-wrap: wrap;
+    }
+
+    #continent {
+        width: 6rem;
+        height: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #search {
+        width: 100%;
+        height: 2rem;
+    }
+}
+
+
