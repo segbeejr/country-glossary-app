@@ -1,1 +1,1 @@
-# country-glossary-app
+# countryGlossaryApp
